@@ -1,0 +1,12 @@
+1. Установить Docker Desktop (https://www.docker.com/products/docker-desktop/)
+2. После установки, запускаем WSL.
+3. Переносим файл generate_project.sh в WSL (подробней в файле INSTALL.md)
+4. Выполняем sudo bash ./generate_project.sh
+5. Переходим в папку /opt/myservis. Выполняем cd /opt/myservis
+6. После перехода в папку /opt/myservis запускаем остальные файлы по очереди:
+sudo bash scripts/02_create_structure.sh
+sudo bash scripts/03_build_and_up.sh
+bash scripts/04_info.sh
+bash scripts/05_check.sh
+7. Проверяем веб-интерфейс:
+http://localhost:8080
